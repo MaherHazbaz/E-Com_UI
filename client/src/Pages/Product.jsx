@@ -38,7 +38,7 @@ const Product = () => {
   ];
   return (
     <>
-      <div>
+      <div className=" flex flex-wrap">
         <CustomProductComponent data={product} />
       </div>
     </>
