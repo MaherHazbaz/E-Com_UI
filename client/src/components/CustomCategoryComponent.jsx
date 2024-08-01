@@ -35,7 +35,7 @@ const CustomCategoryComponent = ({ title }) => {
   ];
   return (
     <>
-      <div className="flex flex-wrap">
+      <div className="flex">
         {category.map((data) => (
           <div className="px-10">
             <button className="hover:bg-black py-5 px-4 hover:text-white hover:rounded flex">

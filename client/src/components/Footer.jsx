@@ -9,8 +9,8 @@ import { FaGooglePlay } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className=" bg-black   text-white flex flex-wrap">
-        <div className=" ">
+      <div className=" bg-black   text-white flex">
+        <div className="px-[9%] flex space-x-40 text-xl py-10 w-[100%] font-thin ">
           <div>
             <button className="font-thin">Support</button>
             <div>

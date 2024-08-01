@@ -39,7 +39,7 @@ const CustomProductComponent = () => {
     },
   ];
   return (
-    <div className=" ">
+    <div className=" flex space-x-28 py-12 ">
       {product.map((data) => (
         <div>
           <div>
@@ -48,7 +48,7 @@ const CustomProductComponent = () => {
             </button>
           </div>
           <div className="text-xl font-thin">
-            <h1>{"ji"}</h1>
+            <h1>{data.name}</h1>
           </div>
           <div>
             <h2 className=" text-red-500 font-semibold">Rs.{data.price}/-</h2>
