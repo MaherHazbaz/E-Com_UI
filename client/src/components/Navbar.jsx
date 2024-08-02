@@ -6,7 +6,7 @@ import { FiShoppingCart } from "react-icons/fi";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-s py-9 flex justify-center ">
+      <div className="bg-s py-9 flex  justify-center ">
         <div className="px-[10%] text-3xl font-bold">Exclusive</div>
         <div className="flex space-x-6  px-[15%]">
           <CustomButton button={"Home"} />
