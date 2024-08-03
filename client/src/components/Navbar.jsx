@@ -11,6 +11,7 @@ const Navbar = () => {
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
     { name: "SignUp", path: "/signup" },
+    { name: "Home", path: "/" },
   ];
 
   console.log(show);
@@ -24,9 +25,9 @@ const Navbar = () => {
           <div
             className={`${
               show ? "block" : "hidden"
-            } w-full md:block md:w-auto px-72`}
+            } w-full md:block md:w-auto `}
           >
-            <ul className="font-medium flex flex-col p-4 md:p- mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text">
+            <ul className="font-medium flex flex-col p-4 md:p- mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text ">
               {arr.map((data) => (
                 <div className="">
                   <Link
@@ -40,12 +41,20 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div>
+          <div className="flex space-x-3">
             <CustomInput
               type={"text"}
               label={"Search"}
               placeholder={"What are you looking for?"}
             />
+            <div className="space-x-3 text-xl flex">
+              <button className="text-red-600">
+                <FaHeart />
+              </button>
+              <button>
+                <FiShoppingCart />
+              </button>
+            </div>
           </div>
 
           <button
@@ -72,15 +81,6 @@ const Navbar = () => {
               />
             </svg>
           </button>
-
-          <div className="space-x-3 text-xl">
-            <button className="text-red-600">
-              <FaHeart />
-            </button>
-            <button>
-              <FiShoppingCart />
-            </button>
-          </div>
         </div>
       </nav>
       <br />
