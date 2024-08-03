@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import CustomCategoryComponent from "../components/CustomCategoryComponent";
 import scandy from "../assets/Images/scandy.jpg";
 import lavender from "../assets/Images/lavender.jpg";
@@ -6,38 +6,38 @@ import game from "../assets/Images/game.jpg";
 import pink from "../assets/Images/pink.jpg";
 import white from "../assets/Images/white.jpg";
 const Headphones = () => {
-   const product = [
-     {
-       id: "1",
-       name: "Lavender Style 3 Headphones",
-       image: lavender,
-       price: "2999",
-     },
-     {
-       id: "1",
-       name: "Sony WH-CH520 Headphones ",
-       image: pink,
-       price: "4599",
-     },
-     {
-       id: "1",
-       name: "Skullcandy  ANC  Headphones-Black",
-       image: scandy,
-       price: "2499",
-     },
-     {
-       id: "1",
-       name: " E7000 Fenrir Xbox Gaming Headset",
-       image: game,
-       price: "8999",
-     },
-     {
-       id: "1",
-       name: " Macron Pods Max (White) ",
-       image: white,
-       price: "3499",
-     },
-   ];
+  const product = [
+    {
+      id: "1",
+      name: "Lavender Style 3 Headphones",
+      image: lavender,
+      price: "2999",
+    },
+    {
+      id: "1",
+      name: "Sony WH-CH520 Headphones ",
+      image: pink,
+      price: "4599",
+    },
+    {
+      id: "1",
+      name: "Skullcandy  ANC  Headphones-Black",
+      image: scandy,
+      price: "2499",
+    },
+    {
+      id: "1",
+      name: " E7000 Fenrir Xbox Gaming Headset",
+      image: game,
+      price: "8999",
+    },
+    {
+      id: "1",
+      name: " Macron Pods Max (White) ",
+      image: white,
+      price: "3499",
+    },
+  ];
   return (
     <>
       <div className="flex  space-x-16  px-20 py-3 ">
@@ -71,6 +71,6 @@ const Headphones = () => {
       </div>
     </>
   );
-}
+};
 
-export default Headphones
+export default Headphones;

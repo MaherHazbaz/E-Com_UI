@@ -42,8 +42,8 @@ const Tablets = () => {
   ];
   return (
     <>
-      <div className=""> 
-        <div className="flex  space-x-20 px-4 py-3 ">
+      <div className="">
+        <div className="flex  space-x-20 px-10 py-3 ">
           {product.map((data) => (
             <div>
               <div>
