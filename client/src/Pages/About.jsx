@@ -2,17 +2,17 @@ import React from 'react'
 import CustomButton from '../components/CustomButton'
 import { Link } from 'react-router-dom'
 import Index from './Index';
+import Sidebar from '../components/Sidebar';
 
 const About = () => {
   return (
-    <>
-      <div className="px-6 py-6 font-bold">
-        <Link to={"/"}>
-          <CustomButton button={"Home"} onclick={onclick} />
-        </Link>
+    <div className='flex'>
+      
+      <div>
+        <Sidebar />
       </div>
-      <div className="px-[25%]">About</div>
-    </>
+      <div> About</div>
+    </div>
   );
 }
 

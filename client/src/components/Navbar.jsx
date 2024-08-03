@@ -8,16 +8,17 @@ const Navbar = () => {
   const [show, setShow] = React.useState(false);
 
   const arr = [
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
-    { name: "SignUp", path: "/signup" },
     { name: "Home", path: "/" },
+    { name: "Contact", path: "/contact" },
+    { name: "About", path: "/about" },
+
+    { name: "SignUp", path: "/signup" },
   ];
 
   console.log(show);
   return (
     <>
-      <nav className="bg-white border-gray-200 ">
+      <nav className="bg-white border-gray-200  ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <span className="self-center text-3xl font- whitespace-nowrap font-bold">
             Exclusive
@@ -41,22 +42,6 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="flex space-x-3">
-            <CustomInput
-              type={"text"}
-              label={"Search"}
-              placeholder={"What are you looking for?"}
-            />
-            <div className="space-x-3 text-xl flex">
-              <button className="text-red-600">
-                <FaHeart />
-              </button>
-              <button>
-                <FiShoppingCart />
-              </button>
-            </div>
-          </div>
-
           <button
             onClick={() => setShow(!show)}
             type="button"
@@ -81,6 +66,21 @@ const Navbar = () => {
               />
             </svg>
           </button>
+          <div className="flex space-x-3">
+            <CustomInput
+              type={"text"}
+              label={"Search"}
+              placeholder={"What are you looking for?"}
+            />
+            <div className="space-x-3 text-xl flex">
+              <button className="text-red-600">
+                <FaHeart />
+              </button>
+              <button>
+                <FiShoppingCart />
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
       <br />
