@@ -38,6 +38,7 @@ const CustomProductComponent = () => {
       price: "3499",
     },
   ];
+  
   return (
     <div className="flex  space-x-12 py-3 ">
       {product.map((data) => (
