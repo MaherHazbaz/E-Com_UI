@@ -10,7 +10,6 @@ const Layout = () => {
   return (
     <div className=" w-full">
       <Navbar />
-      
       <Outlet />
       <Footer />
     </div>

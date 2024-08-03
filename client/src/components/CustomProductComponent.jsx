@@ -39,7 +39,7 @@ const CustomProductComponent = () => {
     },
   ];
   return (
-    <div className="flex  space-x-12 py-3">
+    <div className="flex  space-x-12 py-3 ">
       {product.map((data) => (
         <div>
           <div>
@@ -64,6 +64,7 @@ const CustomProductComponent = () => {
           </div>
         </div>
       ))}
+      
     </div>
   );
 };

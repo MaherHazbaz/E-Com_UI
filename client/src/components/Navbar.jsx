@@ -2,20 +2,51 @@ import React from "react";
 import { FaHeart } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import CustomInput from "./CustomInput";
 
 const Navbar = () => {
   const [show, setShow] = React.useState(false);
 
-  const arr = [{ name: "About" }, { name: "Contact" }, { name: "Signup" }];
+  const arr = [
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+    { name: "SignUp", path: "/signup" },
+  ];
 
   console.log(show);
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Logo
+          <span className="self-center text-3xl font- whitespace-nowrap font-bold">
+            Exclusive
           </span>
+          <div
+            className={`${
+              show ? "block" : "hidden"
+            } w-full md:block md:w-auto px-72`}
+          >
+            <ul className="font-medium flex flex-col p-4 md:p- mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text">
+              {arr.map((data) => (
+                <div className="">
+                  <Link
+                    className="block py-2 tex hover:underline font-bold  "
+                    aria-current="page"
+                    to={data.path}
+                  >
+                    {data.name}
+                  </Link>
+                </div>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <CustomInput
+              type={"text"}
+              label={"Search"}
+              placeholder={"What are you looking for?"}
+            />
+          </div>
 
           <button
             onClick={() => setShow(!show)}
@@ -41,22 +72,19 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <div
-            className={`${show ? "block" : "hidden"} w-full md:block md:w-auto`}
-          >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              {arr.map((data) => (
-                <Link
-                  className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                  aria-current="page"
-                >
-                  {data.name}
-                </Link>
-              ))}
-            </ul>
+
+          <div className="space-x-3 text-xl">
+            <button className="text-red-600">
+              <FaHeart />
+            </button>
+            <button>
+              <FiShoppingCart />
+            </button>
           </div>
         </div>
       </nav>
+      <br />
+      <br />
     </>
   );
 };
