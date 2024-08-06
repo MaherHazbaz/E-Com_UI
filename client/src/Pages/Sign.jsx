@@ -10,7 +10,7 @@ const Sign = () => {
   return (
     <>
       <div className="flex">
-        <div>
+        <div >
           <Sidebar />
         </div>
         <div className=" px-[20%] py-3 space-y-">
@@ -43,7 +43,7 @@ const Sign = () => {
                 <p>Or SignUp using</p>
               </div>
               <div className="text-3xl space-x-4 px-32">
-                <a href="https://accounts.google.co.in">
+                <a href="https://accounts.google.com/signin">
                   <button>
                     <FcGoogle />
                   </button>

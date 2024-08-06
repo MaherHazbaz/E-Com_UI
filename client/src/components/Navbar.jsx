@@ -18,7 +18,7 @@ const Navbar = () => {
   console.log(show);
   return (
     <>
-      <nav className="bg-white border-gray-200  ">
+      <nav className="bg-white border-gray-200 w-full ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <span className="self-center text-3xl font- whitespace-nowrap font-bold">
             Exclusive

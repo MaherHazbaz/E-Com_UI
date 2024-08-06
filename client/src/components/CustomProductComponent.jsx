@@ -40,7 +40,7 @@ const CustomProductComponent = () => {
   ];
   
   return (
-    <div className="flex  space-x-12 py-3 ">
+    <div className="flex  space-x-12 py-3 w-full">
       {product.map((data) => (
         <div>
           <div>
