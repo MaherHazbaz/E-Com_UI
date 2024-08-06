@@ -10,7 +10,7 @@ const Sidebar = () => {
   ];
   return (
     <>
-      <div className="px bg-black h-screen space-y-5 px-16 py-6 text-white  font-medium">
+      <div className="px bg-black h-screen space-y-5 px-16 py-6 text-white w-52 font-medium">
         {sidebar.map((data) => (
           <div>
             <Link to={data.path}>
