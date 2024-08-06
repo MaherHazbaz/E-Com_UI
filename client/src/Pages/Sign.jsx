@@ -19,17 +19,9 @@ const Sign = () => {
           </div>
           <div className="px-20">
             <div className="w-96 space-y-5 py-16">
-              <CustomInput
-                type={"text"}
-                label={"E-Mail"}
-                
-              />
+              <CustomInput type={"text"} label={"E-Mail"} />
 
-              <CustomInput
-                type={"password"}
-                label={"Password"}
-               
-              />
+              <CustomInput type={"password"} label={"Password"} />
               <div className="text-xs px-9 space-x-3 flex">
                 Remember Me
                 <div className="px-2  flex space-x-16">
@@ -51,21 +43,34 @@ const Sign = () => {
                 <p>Or SignUp using</p>
               </div>
               <div className="text-3xl space-x-4 px-32">
-                <button>
-                  <FcGoogle />
-                </button>
-                <button className="text-blue-600">
-                  <FaFacebookSquare />
-                </button>
-                <button className="text-blue-400">
-                  <AiFillTwitterCircle />
-                </button>
+                <a href="https://accounts.google.co.in">
+                  <button>
+                    <FcGoogle />
+                  </button>
+                </a>
+                <a href="https://www.facebook.com">
+                  <button className="text-blue-600">
+                    <FaFacebookSquare />
+                  </button>
+                </a>
+
+                <a href="https://x.com/i/flow/login">
+                  <button className="text-blue-400">
+                    <AiFillTwitterCircle />
+                  </button>
+                </a>
               </div>
-              <div className="font-semibold" >New Here? Register with your Gmail.</div>
+              <div className="font-semibold">
+                New Here? Register with your Gmail.
+              </div>
               <div className="space-y-5">
                 <CustomInput type={"text"} label={"Gmail"} />
                 <CustomInput type={"password"} label={"Create Password"} />
-                <CustomInput type={"password"} label={"Confirm Password"} placeholder={"Re-Enter your Password"}/>
+                <CustomInput
+                  type={"password"}
+                  label={"Confirm Password"}
+                  placeholder={"Re-Enter your Password"}
+                />
               </div>
               <div>
                 <button

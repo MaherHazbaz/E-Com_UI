@@ -4,8 +4,9 @@ import CustomCategoryComponent from "../components/CustomCategoryComponent";
 const Speakers = () => {
   return (
     <>
-      <div>Speakers</div>
-      <div className="px-24">
+      <div className="px-[50%]">Speakers</div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div className="px-24 ">
         <CustomCategoryComponent />
       </div>
     </>
