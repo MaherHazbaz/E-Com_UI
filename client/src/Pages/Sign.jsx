@@ -22,13 +22,13 @@ const Sign = () => {
               <CustomInput
                 type={"text"}
                 label={"E-Mail"}
-                placeholder={"abc@gmail.com"}
+                
               />
 
               <CustomInput
                 type={"password"}
                 label={"Password"}
-                placeholder={"Enter Your password"}
+               
               />
               <div className="text-xs px-9 space-x-3 flex">
                 Remember Me
@@ -65,7 +65,7 @@ const Sign = () => {
               <div className="space-y-5">
                 <CustomInput type={"text"} label={"Gmail"} />
                 <CustomInput type={"password"} label={"Create Password"} />
-                <CustomInput type={"password"} label={"Confirm Password"} />
+                <CustomInput type={"password"} label={"Confirm Password"} placeholder={"Re-Enter your Password"}/>
               </div>
               <div>
                 <button
