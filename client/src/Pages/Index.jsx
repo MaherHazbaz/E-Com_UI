@@ -6,10 +6,12 @@ import Category from "./Category";
 
 const Index = () => {
   return (
-    <div className="px-20 ">
+    <>
       <Product />
-      <Category/>
-    </div>
+      <div className="px-24 ">
+        <Category />
+      </div>
+    </>
   );
 };
 

@@ -40,24 +40,24 @@ const Headphones = () => {
   ];
   return (
     <>
-     
-      <div className="flex  space-x-16  px-16 py-3 ">
+      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 space-x-5 ">
         {product.map((data) => (
-          <div>
+          <div className="p-4 bg-white rounded-lg shadow- flex flex-col items-center">
             <div>
               <button>
                 <img style={{ height: 150, width: 150 }} src={data.image} />
               </button>
             </div>
-            <div className="text-xl font-thin">
+            <div className="text-xl font-thin text-center">
               <h1>{data.name}</h1>
             </div>
+            <br />
             <div>
               <h2 className=" text-red-500 font-semibold">Rs.{data.price}/-</h2>
             </div>
 
             <div>
-              <button className=" px-2 py-2 hover:bg-red-400 hover:text-white hover:rounded-lg">
+              <button className="mt-4 px-4 py-2 bg-transparent hover:bg-red-400 text-red-500 hover:text-white font-semibold border border-red-400 rounded-lg transition duration-300 ease-in-out">
                 Add to Cart
               </button>
             </div>

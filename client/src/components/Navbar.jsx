@@ -17,10 +17,8 @@ const Navbar = () => {
     { name: "SignUp", path: "/signup" },
   ];
 
-
   console.log(show);
-  
-  
+
   return (
     <>
       <nav className="bg-white border-gray-200 w-full ">
@@ -76,7 +74,6 @@ const Navbar = () => {
               type={"text"}
               label={"Search "}
               placeholder={"What are you looking for?"}
-              
             />
             <div className="space-x-3 text-xl flex">
               <button className="text-red-600">

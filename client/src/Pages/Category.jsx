@@ -4,8 +4,9 @@ import CustomCategoryComponent from "../components/CustomCategoryComponent";
 const Category = () => {
   return (
     <>
-      
-      <CustomCategoryComponent />
+      <div className="">
+        <CustomCategoryComponent />
+      </div>
     </>
   );
 };
