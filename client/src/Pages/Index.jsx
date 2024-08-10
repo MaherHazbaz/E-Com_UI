@@ -6,7 +6,7 @@ import Category from "./Category";
 
 const Index = () => {
   return (
-    <div className="px-20">
+    <div className="px-20 ">
       <Product />
       <Category/>
     </div>

@@ -40,7 +40,8 @@ const Headphones = () => {
   ];
   return (
     <>
-      <div className="flex  space-x-16  px-20 py-3 ">
+     
+      <div className="flex  space-x-16  px-16 py-3 ">
         {product.map((data) => (
           <div>
             <div>

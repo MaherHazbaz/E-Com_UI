@@ -15,16 +15,13 @@ const Footer = () => {
             <button className="font-thin">Support</button>
             <div>
               <div className="py-1 px]">
-                <div className=" py-3 space-y-2">
-                  <CustomInput type={"text"} label={"Email"} />
-                  <CustomInput type={"number"} label={"Phone no"} />
-                </div>
+                <div className=" py-3 space-y-2"></div>
               </div>
             </div>
           </div>
           <div className="w-[100%]space-y-2 hover:underline text-2xl ">
             <button>Account</button>
-            <div className="text-sm px-2 py-3 space-y-1 font-extralight">
+            <div className="text-base px-2 py-3 space-y-1 font-extralight">
               <button>MyAccount</button>
               <button>Login/Register</button>
 

@@ -3,6 +3,8 @@ import { FaHeart } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import CustomInput from "./CustomInput";
+import { data } from "autoprefixer";
+import { IoIosSearch } from "react-icons/io";
 
 const Navbar = () => {
   const [show, setShow] = React.useState(false);
@@ -15,7 +17,10 @@ const Navbar = () => {
     { name: "SignUp", path: "/signup" },
   ];
 
+
   console.log(show);
+  
+  
   return (
     <>
       <nav className="bg-white border-gray-200 w-full ">
@@ -69,8 +74,9 @@ const Navbar = () => {
           <div className="flex space-x-3">
             <CustomInput
               type={"text"}
-              label={"Search"}
+              label={"Search "}
               placeholder={"What are you looking for?"}
+              
             />
             <div className="space-x-3 text-xl flex">
               <button className="text-red-600">
@@ -82,9 +88,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        <br />
       </nav>
-      <br />
-      <br />
     </>
   );
 };

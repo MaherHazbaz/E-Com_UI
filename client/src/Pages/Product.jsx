@@ -1,5 +1,10 @@
 import React from "react";
 import CustomProductComponent from "../components/CustomProductComponent";
+import igreen from "../assets/Images/igreen.jpg";
+import iphone from "../assets/Images/iphone.jpg";
+import igrey from "../assets/Images/i grey.jpg";
+import ipink from "../assets/Images/ipink.jpg";
+import iphonee from "../assets/Images/iphonee.jpg";
 
 import { Outlet } from "react-router-dom";
 
@@ -36,12 +41,15 @@ const Product = () => {
       price: "3499",
     },
   ];
+  
   return (
     <>
       <div className="flex-wrap">
         <CustomProductComponent data={product} />
       </div>
-    </> 
+      
+      
+    </>
   );
 };
 

@@ -41,7 +41,8 @@ const Phones = () => {
   ];
   return (
     <>
-      <div className="flex  space-x-16 px-10 py-3 ">
+      
+      <div className="flex  space-x-16 px-16 py-3 ">
         {productphone.map((data) => (
           <div>
             <div>

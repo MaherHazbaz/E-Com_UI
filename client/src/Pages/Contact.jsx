@@ -13,6 +13,7 @@ const Contact = () => {
         </div>
         <div>Contact</div>
       </div>
+     
     </>
   );
 }

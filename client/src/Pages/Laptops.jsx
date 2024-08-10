@@ -40,8 +40,12 @@ const Laptops = () => {
       price: "113499",
     },
   ];
+  const data = [{ name: "Laptop" }];
   return (
     <>
+      
+
+      
       <div className="">
         <div className="flex  space-x-20 px-10 py-3 ">
           {product.map((data) => (

@@ -2,7 +2,7 @@ import React from "react";
 
 const CustomInput = ({ label, type, value, onChange, placeholder }) => {
   return (
-    <div class="relative h-10 w-full min-w-[200px]">
+    <div class="relative h-10 w-full min-w-[200px] bg-white rounded-md">
       <input
         value={value}
         onChange={onChange}

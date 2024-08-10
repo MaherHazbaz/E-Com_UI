@@ -5,6 +5,12 @@ import lavender from "../assets/Images/lavender.jpg";
 import game from "../assets/Images/game.jpg";
 import pink from "../assets/Images/pink.jpg";
 import white from "../assets/Images/white.jpg";
+import igreen from "../assets/Images/igreen.jpg";
+import iphone from "../assets/Images/iphone.jpg";
+import igrey from "../assets/Images/i grey.jpg";
+import ipink from "../assets/Images/ipink.jpg";
+import iphonee from "../assets/Images/iphonee.jpg";
+
 const CustomProductComponent = () => {
   const product = [
     {
@@ -37,11 +43,13 @@ const CustomProductComponent = () => {
       image: white,
       price: "3499",
     },
+    
+   
   ];
   
   return (
-    <div className="flex  space-x-12 py-3 w-full">
-      {product.map((data) => (
+    <div className=" flex space-x-12  py-3 w-full">
+      {product.map((data) => ( 
         <div>
           <div>
             <button>
