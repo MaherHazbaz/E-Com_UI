@@ -10,7 +10,7 @@ const Phones = () => {
   const productphone = [
     {
       id: "1",
-      name: "Apple iPhone 15 - 128 GB - Blue",
+      name: "Apple iPhone 15 - (128 GB) - Blue",
       image: iphone,
       price: "12999",
     },

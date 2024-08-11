@@ -68,7 +68,7 @@ const CustomProductComponent = () => {
               Add to Cart
             </button>
           </div>
-          <div></div>
+          <div><br /></div>
         </div>
       ))} 
     </div>

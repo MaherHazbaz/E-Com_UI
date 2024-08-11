@@ -43,10 +43,10 @@ const CustomCategoryComponent = ({ title }) => {
   ];
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-7 space-x-12 ">
+      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5  xl:grid-cols-6 ">
         {category.map((data) => (
-          <div className="px-10">
-            <Link to={data.path}> 
+          <div className="">
+            <Link to={data.path}>
               <button className="hover:bg-black py-5 px-4 hover:text-white hover:rounded flex">
                 {data.title}
                 <div className="px-2 py-1">{data.image}</div>
