@@ -15,7 +15,7 @@ const CustomProductComponent = () => {
   const product = [
     {
       id: "1",
-      name: "Lavender Style 3 Headphones",
+      name: "Lavender Style 3 bluetooth Headphones",
       image: lavender,
       price: "2999",
     },
@@ -39,14 +39,14 @@ const CustomProductComponent = () => {
     },
     {
       id: "1",
-      name: " Macron Pods Max (White) ",
+      name: " Apple Macron Pods Max (White) ",
       image: white,
       price: "3499",
     },
   ];
 
   return (
-    <div className=" grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 space-x-5">
+    <div className=" grid grid-cols-1  lg:grid-cols-5 space-x-5">
       {product.map((data) => (
         <div className="bg-white p-4  rounded-lg shadow- flex flex-col items-center">
           <div>

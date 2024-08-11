@@ -43,7 +43,7 @@ const CustomCategoryComponent = ({ title }) => {
   ];
   return (
     <>
-      <div className="flex py-3 ">
+      <div className="grid grid-cols-1 lg:grid-cols-7 space-x-12 ">
         {category.map((data) => (
           <div className="px-10">
             <Link to={data.path}> 

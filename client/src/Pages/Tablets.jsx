@@ -29,7 +29,7 @@ const Tablets = () => {
     },
     {
       id: "1",
-      name: " E7000 Fenrir Xbox Gaming Tab",
+      name: " E7000 Fenrir  Gaming Tab",
       image: t4,
       price: "118999",
     },
@@ -61,7 +61,7 @@ const Tablets = () => {
                 </h2>
               </div>
 
-              <div>
+              <div className="">
                 <button className="mt-4 px-4 py-2 bg-transparent hover:bg-red-400 text-red-500 hover:text-white font-semibold border border-red-400 rounded-lg transition duration-300 ease-in-out">
                   Add to Cart
                 </button>

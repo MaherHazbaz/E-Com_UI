@@ -43,7 +43,7 @@ const SmartWatches = () => {
   return (
     <>
       <div className="">
-        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 space-x-5 ">
+        <div className="grid grid-cols-1  lg:grid-cols-5 space-x-5 ">
           {product.map((data) => (
             <div className="p-4 bg-white rounded-lg shadow- flex flex-col items-center">
               <div>
@@ -53,7 +53,8 @@ const SmartWatches = () => {
               </div>
               <div className="text-xl font-thin text-center">
                 <h1>{data.name}</h1>
-              </div><br />
+              </div>
+              <br />
               <div>
                 <h2 className=" text-red-500 font-semibold">
                   Rs.{data.price}/-
