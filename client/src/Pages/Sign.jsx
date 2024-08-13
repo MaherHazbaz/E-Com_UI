@@ -7,17 +7,17 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import Loginbar from "../components/Loginbar";
-import ecom from "../assets/Images/ecom.png";
+import ecom3 from "../assets/Images/ecom2.png";
 
 const CustomInput = ({ type, label, placeholder }) => (
   <div className="relative z-0 w-full mb-6 group">
     <input
       type={type}
       placeholder=" "
-      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-black peer"
       required
     />
-    <label className="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+    <label className="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
       {label}
     </label>
   </div>
@@ -50,7 +50,7 @@ const LoginForm = () => (
     </div>
     <div className="pt-4">
       <button
-        className="w-full py-3 text-sm font-bold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+        className="w-full py-3 text-sm font-bold text-white bg-black rounded-sm  shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
         type="button"
       >
         Login
@@ -122,18 +122,18 @@ const Sign = () => {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: `url(${ecom})` }}
+      className="h-screen bg- w-full bg-center flex items-center justify-center"
+      style={{ backgroundImage: `url(${ecom3})` }}
     >
-      <div className="w-full max-w-2xl px-6 py-8 bg-white bg-opacity-90 rounded-lg shadow-xl">
-        <div className="text-3xl font-bold text-center mb-6 text-gray-800">
+      <div className="w-full max-w-2xl px-6 py-8 bg-bl bg-opacity-100  shadow-md  shadow-black">
+        <div className="text-3xl font- text-center mb-6 text-gray-800">
           <p>{isLogin ? "Hi Welcome Back!" : "Join Us Now!"}</p>
         </div>
         <div className="relative">
           {isLogin ? <LoginForm /> : <SignupForm />}
           <div className="text-center mt-6">
             <button
-              className="text-blue-600 font-semibold hover:underline"
+              className="text-white font-semibold hover:bg-black bg-slate-900 rounded- px-2 py-1"
               onClick={() => setIsLogin(!isLogin)}
             >
               {isLogin ? "New User? Sign Up" : "Already a User? Login"}
