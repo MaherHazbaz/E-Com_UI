@@ -122,7 +122,7 @@ const Sign = () => {
 
   return (
     <div
-      className="h-screen bg- w-full bg-center flex items-center justify-center"
+      className="h-screen bg-inherit w-full bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${ecom3})` }}
     >
       <div className="w-full max-w-2xl px-6 py-8 bg-bl bg-opacity-100  shadow-md  shadow-black">

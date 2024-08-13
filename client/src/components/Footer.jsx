@@ -13,6 +13,11 @@ const Footer = () => {
         <div className="  text-xl py-10 w-[100%] font-thin grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:-grid-cols-4 lg:grid-cols-5  space-x-10 ">
           <div>
             <button className="font-thin  text-2xl px-10">Support</button>
+            <div className="px-10 py-3 text-sm">
+              <p>abc@gmail.com</p>
+              <p>Customercare@helpline.in</p>
+              <p> Mobile: 9876543210</p>
+            </div>
             <div>
               <div className="py-1 px]">
                 <div className=" py-3 space-y-2"></div>
