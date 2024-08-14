@@ -10,6 +10,7 @@ import iphone from "../assets/Images/iphone.jpg";
 import igrey from "../assets/Images/i grey.jpg";
 import ipink from "../assets/Images/ipink.jpg";
 import iphonee from "../assets/Images/iphonee.jpg";
+import Star from "./Star";
 
 const CustomProductComponent = () => {
   const product = [
@@ -56,6 +57,9 @@ const CustomProductComponent = () => {
           </div>
           <div className="text-xl font-thin text-center">
             <h1>{data.name}</h1>
+          </div>
+          <div>
+            <Star/>
           </div>
           <div>
             <h2 className=" text-red-500 font-semibold py-3">

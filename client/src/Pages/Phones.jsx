@@ -5,6 +5,8 @@ import iphone from "../assets/Images/iphone.jpg";
 import igrey from "../assets/Images/i grey.jpg";
 import ipink from "../assets/Images/ipink.jpg";
 import iphonee from "../assets/Images/iphonee.jpg";
+import Star from "../components/Star";
+
 
 const Phones = () => {
   const productphone = [
@@ -52,7 +54,10 @@ const Phones = () => {
             <div className="text-xl font-thin text-center">
               <h1>{data.name}</h1>
             </div>
-            <br />
+            
+            <div>
+              <Star />
+            </div>
             <div>
               <h2 className=" text-red-500 font-semibold">Rs.{data.price}/-</h2>
             </div>

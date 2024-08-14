@@ -5,6 +5,7 @@ import lavender from "../assets/Images/lavender.jpg";
 import game from "../assets/Images/game.jpg";
 import pink from "../assets/Images/pink.jpg";
 import white from "../assets/Images/white.jpg";
+import Star from "../components/Star";
 const Headphones = () => {
   const product = [
     {
@@ -51,7 +52,9 @@ const Headphones = () => {
             <div className="text-xl font-thin text-center">
               <h1>{data.name}</h1>
             </div>
-            <br />
+            <div>
+              <Star />
+            </div>
             <div>
               <h2 className=" text-red-500 font-semibold">Rs.{data.price}/-</h2>
             </div>

@@ -6,6 +6,7 @@ import s3 from "../assets/Images/s3.jpg";
 import s4 from "../assets/Images/s4.jpg";
 import s2 from "../assets/Images/s2.jpg";
 import s5 from "../assets/Images/s5.jpg";
+import Star from "../components/Star";
 
 const SmartWatches = () => {
   const product = [
@@ -54,7 +55,9 @@ const SmartWatches = () => {
               <div className="text-xl font-thin text-center">
                 <h1>{data.name}</h1>
               </div>
-              <br />
+              <div>
+                <Star />
+              </div>
               <div>
                 <h2 className=" text-red-500 font-semibold">
                   Rs.{data.price}/-

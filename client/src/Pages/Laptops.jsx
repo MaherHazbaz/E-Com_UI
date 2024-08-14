@@ -6,6 +6,7 @@ import l3 from "../assets/Images/l3.jpg";
 import l4 from "../assets/Images/l4.jpg";
 import l2 from "../assets/Images/l2.jpg";
 import l5 from "../assets/Images/l5.jpg";
+import Star from "../components/Star";
 
 const Laptops = () => {
   const product = [
@@ -54,7 +55,10 @@ const Laptops = () => {
               </div>
               <div className="text-xl font-thin text-center">
                 <h1>{data.name}</h1>
-              </div><br />
+              </div>
+              <div>
+                <Star />
+              </div>
               <div>
                 <h2 className=" text-red-500 font-semibold">
                   Rs.{data.price}/-
